@@ -16,6 +16,7 @@ code-breaker or _cbreaker_ is a [**ZWSP**](https://en.wikipedia.org/wiki/Zero-wi
 - [Usage](#usage)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
+- [Thanks To](#thanks-to)
 - [License](#license)
 
 ## Install
@@ -70,6 +71,12 @@ Standard Readme follows the [Contributor Covenant](http://contributor-covenant.o
 This project exists thanks to all the people who <a href="https://github.com/xPawn0/code-breaker/graphs/contributors">contributed</a>.
 
 
+## Thanks To
+
+[@cofyc - argparse](https://github.com/cofyc/argparse)
+
+
 ## License
 
 [MIT](LICENSE.txt) © 2023 xPawn0
+
