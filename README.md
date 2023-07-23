@@ -4,17 +4,16 @@
 
 #### This program is for educational purposes only, and is not meant to be used in any harmful form.
 
-code-breaker or _('cbreaker')_ is a [**ZWSP**](https://en.wikipedia.org/wiki/Zero-width_space) ("zero-width space") injector to inject source code _(or files in general)_ with zero-width bytes everywhere in the file, leading the source code to not work properly, and to make it harder for the developer to maintance the issue in his code, just like a beautiful prank to pull up on your programmer friends xD.
+code-breaker or _cbreaker_ is a [**ZWSP**](https://en.wikipedia.org/wiki/Zero-width_space) ("zero-width space") injector to inject source code _(or files in general)_ with zero-width bytes everywhere in the file, leading the source code to not work properly, and to make it harder for the developer to maintance the issue in his code, just like a beautiful prank to pull up on your programmer friends xD.
 <center>This idea was inspired by the <a href="https://github.com/Microsoft/vscode/issues/58252">issue</a> in the <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code">Visual Studio Code IDE</a></center>
 
 ## Table of Contents
 
 - [Install](#install)
 	- [Build](#build)
-	- [Play](#play)
+	- [Run](#run)
 	- [Delete](#remove)
 - [Usage](#usage)
-- [Related Efforts](#related-efforts)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
@@ -33,7 +32,7 @@ $ cd code-breaker/
 code-breaker/:$ make  #defaults to build
 code-breaker/:$ make binary  #build & create binary as `cbreaker` in (~/.local/bin)
 ```
-#### Play:
+#### Run:
 ```sh
 code-breaker/:$ make run  #only display usage (Discouraged)
 code-breaker/:$ ./bin/code-breaker  #or cbreaker
