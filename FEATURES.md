@@ -5,8 +5,8 @@
 
 # Future Features:
 
-* Check program version and suggest update if there is newer. (optional)
-* Costum extension for copied files. (optional, default=".cbcp")
-* **[HEAVY, LIGHT]** injection modes:
-    * **HEAVY**: zwsp-byte after each character in the file. **file size: _(fsize*3+fsize)_**
-    * **LIGHT**: zwsp-byte at the beggening, center and the end of the file. **file size: _(3*3+fsize)_**
+* [ ] ~Check program version and suggest update if there is newer. (optional)~ This is just more work for nothing useful nor rewarding
+* [ ] Costum extension for copied files. (optional, default=".cbcp")
+* [X] **[HEAVY, LIGHT]** injection modes:
+    * **HEAVY**: zwsp-byte after each character in the file. **file size: _(fsize x 3 + fsize)_**
+    * **LIGHT**: zwsp-byte at random locations in the file. **file size: _(fsize/10 x 3 + fsize)_**
