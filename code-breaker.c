@@ -23,9 +23,9 @@ static const char *usages[] = {
 static struct argparse_option options[] = {
   OPT_HELP(),
   OPT_GROUP("General options"),
-  OPT_STRING('f',  "file",  &infile,    "File to inject.",                   NULL, 0,     0),
-  OPT_BOOLEAN('c', "copy",  &MAKE_COPY, "Make a copy of the original file.", NULL, 0,     0),
-  OPT_INTEGER('m', "mode", &mode,      "Set injection mode. (light=0, default: heavy=1)",                NULL, LIGHT, 0),
+  OPT_STRING('f',  "file", &infile,    "File to inject.",                                 NULL, 0,     0),
+  OPT_BOOLEAN('c', "copy", &MAKE_COPY, "Make a copy of the original file.",               NULL, 0,     0),
+  OPT_INTEGER('m', "mode", &mode,      "Set injection mode. (light=0, default: heavy=1)", NULL, LIGHT, 0),
   OPT_END(),
 };
 
@@ -55,7 +55,6 @@ int main(int argc, const char *argv[])
     rewind(fd);
   }
 
-  printf("mode: \"%d\"\n", mode);
   zwsp_inject(fd, infile, mode);
   return 0;
 }

@@ -39,9 +39,6 @@ void zwsp_inject(FILE *fd, char *fn, int mode)
       randarr[i] = rand() % fsize;
     }
     arr_sort(randarr, ARRAY_SIZE(randarr));
-    printf("randarr[0] = %d\n", randarr[0]);
-    printf("randarr[1] = %d\n", randarr[1]);
-    printf("randarr[2] = %d\n", randarr[2]);
     int i = 0;
     char c = fgetc(fd);
     while (c != EOF) {
