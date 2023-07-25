@@ -1,12 +1,12 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -I./libs/argparse/
+CFLAGS=-Wall -Wextra -I./libs/argparse/ -I./src/
 EXECFILE=code-breaker
 FULLEXECPATH=bin/code-breaker
-LIBS=$(wildcard libs/*/*.c)
+SOURCES=$(wildcard libs/*/*.c src/*.c)
 
 
 build:
-	${CC} ${CFLAGS} code-breaker.c ${LIBS} -o ${FULLEXECPATH}
+	${CC} ${CFLAGS} code-breaker.c ${SOURCES} -o ${FULLEXECPATH}
 
 binary: build
 	cp ${FULLEXECPATH} ~/.local/bin/cbreaker
